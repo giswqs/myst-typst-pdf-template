@@ -193,4 +193,10 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 # MyST build outputs
-_build
+
+# Ignore everything under _build
+/_build/*
+# Except _build/templates/
+!/_build/templates/
+# And everything inside _build/templates/
+!/_build/templates/**
